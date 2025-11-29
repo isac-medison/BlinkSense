@@ -1,0 +1,20 @@
+# Core image processing and math
+opencv-python>=4.12.0.88
+imutils>=0.5.4
+numpy>=2.2.6
+scipy>=1.16.3
+
+# Environment and configuration
+pydantic>=2.0.0
+pydantic_settings>=2.0.0
+python-dotenv>=1.1.1
+
+# Documentation
+sphinx>=8.2.3
+
+# Detectors / ML
+mediapipe>=0.10.21
+cvzone>=1.6.1
+dlib>=20.0.0
+keras>=3.12.0
+tensorflow>=2.20.0

@@ -1,5 +1,0 @@
-2025-11-24 20:00:39,183 - server - INFO - Server listening on 127.0.0.1:9999
-2025-11-24 20:00:52,136 - client - INFO - Client started
-2025-11-24 20:01:03,360 - interpreter - INFO - Notifying high blink rate
-2025-11-24 20:01:08,226 - client - INFO - Client resources released.
-2025-11-24 20:01:08,226 - BlinkSense - INFO - Interrupted by user.

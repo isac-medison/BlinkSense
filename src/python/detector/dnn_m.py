@@ -42,4 +42,14 @@ class Detector:
             l_ear = calculate_EAR(l_shape)
             r_ear = calculate_EAR(r_shape)
             self.ear = (l_ear + r_ear) / 2
+
+
+            # draw eyes
+            # --- Draw left eye points ---
+            for (x, y) in l_shape:
+                cv2.circle(frame, (x, y), 2, (0, 255, 0), -1)
+
+            # --- Draw right eye points ---
+            for (x, y) in r_shape:
+                cv2.circle(frame, (x, y), 2, (0, 255, 0), -1)
         return frame

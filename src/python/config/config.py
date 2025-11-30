@@ -17,10 +17,6 @@ class Settings(BaseSettings):
     server_ip:str = "127.0.0.1"
     server_port:int = 8000
 
-    # Client
-    client_ip:str = "127.0.0.1"
-    client_port:int = 8001
-
     #Notification
     ear_trash:float = 0.42
 

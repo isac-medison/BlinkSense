@@ -36,7 +36,7 @@ class Server:
     def __enter__(self):
         self.socket.bind((self.config.server_ip, self.config.server_port))
         self.logger.info(
-            f"Server listening on {self.config.client_ip}:{self.config.client_port}"
+            f"Server listening on {self.config.server_ip}:{self.config.server_port}"
         )
         return self
 

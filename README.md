@@ -109,10 +109,6 @@ SERVER_PORT=9999
 # Maximum UDP packet size (usually 65507 bytes)
 BUFFER_SIZE=65507
 
-# Client settings
-CLIENT_IP=127.0.0.1
-CLIENT_PORT=9999
-
 # Notification
 ALERTS_ENABLED=false
 SMTP_SERVER=smtp.gmail.com

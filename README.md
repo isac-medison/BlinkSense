@@ -69,7 +69,7 @@
 ```
 Windows: 
 ```bash
-  .venv\Scripts\activate
+  venv\Scripts\activate
 ```
 Linux/Mac:
 ```bash
@@ -86,8 +86,8 @@ sudo sysctl -w net.inet.udp.maxdgram=65535
 ```bash
   pip install -r requirements.txt
 ```
-#### Завантажте моделі в /models
-[shape_predictor_68_face_landmarks.dat](https://dlib.net/files/shape_predictor_68_face_landmarks.dat)
+#### Завантажте моделі в /model
+[shape_predictor_68_face_landmarks.dat](https://dlib.net/files)
 
 [res10_300x300_ssd_iter_140000.caffemodel](https://github.com/Isfhan/face-detection-python/blob/master/res10_300x300_ssd_iter_140000.caffemodel)
 [model/2018_12_17_22_58_35.h5](https://github.com/kairess/eye_blink_detector/tree/master/models)
@@ -151,12 +151,23 @@ LOG_FILE="blinksense.log"
 6. Запустіть Серверну частину на пристрої, що буде обробляти відео пацієнта.
 7. Запустіть Клієнтську частину на пристрої з вебкамерою пацієнта.
 
+## 🖱️ Інструкція калібрування параметрів
+
+1. Запишіть тестові відеоматеріали в різних умовах (стандартне освітлення, змінне освітлення, часткові повороти голови, використання окулярів тощо).
+2. Розмістіть отримані відео у директорії data/videos.
+3. Запустіть модуль тестування: src/python/tests/test_detector.py.
+4. Перегляньте результати обробки у директорії data/videos/processed.
+5. Порівняйте зафіксовану кількість кліпань з фактичним значенням.
+6. Відкоригуйте коефіцієнти в конфігураційному файлі .env.
+7. Повторюйте кроки 3–6, доки точність визначення не досягне рівня ≥ 80%.
 
 ## 📷 Приклади / скриншоти
 
-[Blink detection (mediapipe)](https://youtu.be/I7JO84GOf3I)
-
-[Blink detection (cv_zone)](https://youtu.be/TSB1Mxgk2iI)
+- [Blink detection (cv_zone)](https://youtu.be/TSB1Mxgk2iI)
+- [Blink detection (mediapipe)](https://youtu.be/I7JO84GOf3I)
+- [Blink detection with glasses (mediapipe + dnn)](https://youtu.be/jBtTnSvjl7s)
+- [Blink detection (mediapipe + dnn)](https://youtu.be/DMSribwgsj0)
+- [multiple clients + gmail notifier](https://youtu.be/1rPCP-OKQdg)
 
 ---
 
